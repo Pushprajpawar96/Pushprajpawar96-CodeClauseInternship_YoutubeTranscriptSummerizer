@@ -1,0 +1,176 @@
+/* Styles for the body element */
+body {
+    font-family: 'Ubuntu';
+    max-width: 500px;
+    background: hsla(233, 12%, 13%, 1);
+    color: white;
+}
+
+/* Styles for the extension icon */
+#extensionIcon {
+    float: right;
+    width: 26px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Styles for the subtitle statistics section */
+#subtitleStats {
+    color: #d5ece9c2;
+    font-style: oblique;
+    font-size: 12px;
+}
+
+/* Styles for the interval input */
+#intervalInput {
+    background: none;
+    font-size: 14px;
+    border: 1px solid rgb(209 209 209 / 52%);
+    border-radius: 0.6em;
+    outline: none;
+    color: white;
+    padding: 4px 7px 4px 7px;
+}
+
+/* Styles for buttons on hover and active state */
+#automateButton:active,
+#summaryButton:active,
+#refreshButton:active,
+#summaryButton:hover,
+#refreshButton:hover,
+#intervalInput:hover,
+#intervalInput:hover::placeholder,
+.radio_input:checked+.radio_label {
+    background-color: white;
+    color: black;
+}
+
+/* Styles for the interval input placeholder */
+#intervalInput::placeholder {
+    color: #d1d1d1;
+}
+
+/* Styles to hide the spin buttons for the interval input */
+#intervalInput::-webkit-outer-spin-button,
+#intervalInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Styles for the content group section */
+#contentGroup {
+    display: flex;
+    color: white;
+    min-width: 500px;
+    max-height: 300px;
+    border-top: 2px solid #5c5a5a;
+    margin: 5px 0px 0px 0px;
+}
+
+/* Styles for the left row in the content group */
+#leftRow {
+    float: left;
+    width: 50%;
+}
+
+/* Styles for the right row in the content group */
+#rightRow {
+    float: right;
+    width: 50%;
+    margin-left: 5px;
+    color: #ffffffc4;
+}
+
+/* Styles for the temporary link label */
+#temporaryLinkLabel {
+    color: wheat;
+}
+
+/* Styles for the load full button */
+#loadFullButton {
+    background: none;
+    border: none;
+    color: #ffffff70;
+    padding: 0px;
+}
+
+/* Styles for the summary and refresh buttons */
+#summaryButton,
+#refreshButton {
+    background: none;
+    border-radius: 0.6em;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(209 209 209 / 52%);
+    color: #d1d1d1;
+    font-size: 14px;
+    margin: 0px 0.9em 0px 0.1em;
+    padding: 4px 11px 4px 11px;
+}
+
+/* Styles for the automate button */
+#automateButton {
+    background: none;
+    font-family: ubuntu;
+    border: none;
+    border-left: 2px solid #f00;
+    color: #d1d1d1;
+}
+
+/* Styles for the content group scroll bar */
+#contentGroup {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: system-ui;
+}
+
+/* Styles for the scroll bar track */
+#contentGroup::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Styles for the scroll bar */
+#contentGroup::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Styles for the scroll bar thumb */
+#contentGroup::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+/* Styles for the radio button group */
+.radio {
+    display: inline-flex;
+    margin: 8px 0px 8px 0px;
+    background: none;
+    margin-top: 10px;
+    font-size: 12px;
+    border: 1px solid rgb(209 209 209 / 52%);
+    overflow: hidden;
+    font-family: ubuntu;
+    border-radius: 0.6em;
+}
+
+/* Styles for the radio input */
+.radio_input {
+    display: none;
+}
+
+/* Styles for the radio label on hover */
+#automateButton:hover,
+.radio_input:hover+.radio_label {
+    background: hsl(233deg 6% 27%);
+    color: #b5b3b3;
+}
+
+/* Styles for the radio label */
+.radio_label {
+    padding: 8px 14px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background: none;
+    color: #d1d1d1;
+    transition: background 0.6s;
+}

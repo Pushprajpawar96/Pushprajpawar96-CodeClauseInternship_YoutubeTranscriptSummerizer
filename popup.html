@@ -1,0 +1,52 @@
+<!-- ============================== Created By Nikhil============================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css"> <!-- Include external CSS file -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'> <!-- Load Google Fonts -->
+    <title>Youtube Transcript Summarizer</title>
+</head>
+
+<body>
+    <!-- Buttons for different functionalities -->
+    <button id="summaryButton">Show</button> <!-- Button to show the summarized transcript -->
+    <button id="refreshButton">Update</button> <!-- Button to update the content -->
+    <input id="intervalInput" type="number" min="1" title="will add newline, for specified timecode difference"
+        placeholder="Split every x (sec)"></input> <!-- Input for specifying the interval for splitting transcript -->
+    <img src='icons/yt.png' id="extensionIcon"></img> <!-- YouTube icon image -->
+    <div class="radio">
+        <!-- Radio buttons for different summarization options -->
+        <input class="radio_input" value="a" type="radio" id="firstOption" name="summarizer">
+        <label class="radio_label" for="firstOption" title="may not work after some time">summari</label>
+        <input class="radio_input" value="b" type="radio" id="secondOption" name="summarizer">
+        <label class="radio_label" for="secondOption" title="best option compared to others">summari (login)</label>
+        <input class="radio_input" value="c" type="radio" id="thirdOption" name="summarizer">
+        <label class="radio_label" for="thirdOption" title="has word limitation">quillbot (&lt1200 words)</label>
+        <button id="automateButton" title="if content is empty or not up-to-date, try this button on opened video">get
+            content</button> <!-- Button to get content from the opened video -->
+    </div>
+    <div id="subtitleStats">
+        <!-- Subtitle statistics section -->
+        <label id="delayLabel"></label>
+        <div style="display: inline-block;">url_</div><a id="temporaryLinkLabel"></a>
+        <label id="wordCount"></label>
+    </div>
+    <div id="contentGroup">
+        <!-- Div for the content group section -->
+        <div id="leftRow">
+            <!-- Left section containing the summarized transcript -->
+            <p id="transcriptText" title="Click to copy subtitles"></p> <!-- Paragraph to display the summarized transcript -->
+            <button id="loadFullButton">Press to see full content</button> <!-- Button to view full content -->
+        </div>
+        <div id="rightRow">
+            <!-- Right section containing the formatted text -->
+            <p id="formattedText" title="Click to copy formatted text">Output text content</p> <!-- Paragraph to display the formatted text -->
+        </div>
+    </div>
+    <script type='text/javascript' src='popup.js'></script> <!-- Include external JavaScript file -->
+</body>
+
+</html>
